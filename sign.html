@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="style.css">
+  
+  
+    <title>SIGN IN</title>  
+</head>
+<body>
+   
+       
+       <div  class="anand"> <label for="si">user name</label>
+        <input type="text" name="" id="si"> <br>
+        <label for="pass">password</label>
+        <input type="password" name="" id="pass"> <br>
+        <input type="checkbox" id="cb">
+        <button  id="button" onclick="hello()">submit</button>
+       
+</div>
+   
+    <script>
+        function hello()
+         { var name = document.getElementById("si").value;
+           var pass = document.getElementById("pass").value;
+            // var check = document.getElementById("cb").value;
+
+           if (name == 'anand' && pass == 'admin')
+        {   
+            alert("sucessful");
+                window.location.assign("main.html");
+        }
+        else
+            alert("check the username and password once");
+                
+        }
+        
+    </script>
+</body>
+</html>
